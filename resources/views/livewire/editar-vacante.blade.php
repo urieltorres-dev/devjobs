@@ -37,7 +37,7 @@
         wire:model="categoria" id="categoria">
             <option value="">-- Selecciona una categoria --</option>
             @foreach ($categorias as $categoria)
-                <option value="{{ $categoria->id }}">{{ $categoria->nombre }}</option>
+                <option value="{{ $categoria->id }}">{{ $categoria->categoria }}</option>
             @endforeach
         </select>
 
@@ -88,8 +88,9 @@
 
         <x-text-input id="imagen_nueva" class="block mt-1 w-full" type="file" wire:model="imagen_nueva" accept="image/*" />
 
-        <div class="my-5 w-80 mx-auto" >
+        <div class="mt-4 w-80 mx-auto" >
             @if ($imagen_nueva)
+                <x-input-label :value="__('Imagen nueva')" />
                 <img src="{{ $imagen_nueva->temporaryUrl() }}" alt="">
             @endif
         </div>
@@ -99,12 +100,12 @@
         @enderror
     </div>
 
-    <div class="m-4">
+    <div class="mt-4 w-80 mx-auto">
         <x-input-label :value="__('Imagen actual')" />
         <img src="{{ asset('storage/vacantes/' . $imagen) }}" alt="Imagen actual de vacante">
     </div>
 
     <x-primary-button class="mt-4 w-full justify-center">
-        {{ __('Guardar cambios') }}
+        {{ __('Save') }}
     </x-primary-button>
 </form>

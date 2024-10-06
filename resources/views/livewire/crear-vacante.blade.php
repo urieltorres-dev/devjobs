@@ -88,7 +88,7 @@
 
         <x-text-input id="imagen" class="block mt-1 w-full" type="file" wire:model="imagen" accept="image/*" />
 
-        <div class="my-5 w-80 mx-auto" >
+        <div class="mt-4 w-80 mx-auto" >
             @if ($imagen)
                 <img src="{{ $imagen->temporaryUrl() }}" alt="">
             @endif

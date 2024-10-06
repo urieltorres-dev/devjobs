@@ -24,6 +24,9 @@ class VacanteController extends Controller
 
     public function edit(Vacante $vacante)
     {
+        if (!auth()->user()->can('update', $vacante)) {
+            abort(403);
+        }
         return view('vacantes.edit', compact('vacante'));
     }
 }
