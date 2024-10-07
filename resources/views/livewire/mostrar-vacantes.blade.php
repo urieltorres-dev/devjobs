@@ -25,7 +25,7 @@
                             </a>
                             <button
                                 class="bg-red-600 py-2 px-4 rounded-lg text-xs font-bold uppercase text-center text-white"
-                                wire:click="$emit('mostrarAlerta', {{ $vacante->id }})">
+                                wire:click="$dispatch('mostrarAlerta', { vacanteId: {{ $vacante->id }}})">
                                 Eliminar
                             </button>
                         </div>
@@ -48,7 +48,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
-        Livewire.on('mostrarAlerta', vacanteId => {
+        Livewire.on('mostrarAlerta', ({ vacanteId }) => {
             Swal.fire({
                 title: '¿Deseas eliminar la vacante?',
                 text: "No podras revertir esto",
@@ -60,11 +60,11 @@
                 cancelButtonText: 'Cancelar'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    Livewire.emit('eliminarVacante', vacanteId);
+                    Livewire.dispatch('eliminarVacante', { vacanteId: vacanteId });
 
                     Swal.fire(
-                        'Eliminada!',
-                        'La vacante ha sido elimanda',
+                        'Eliminado!',
+                        'La vacante ha sido elimanda correctamente',
                         'success'
                     )
                 }

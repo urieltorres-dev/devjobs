@@ -4,16 +4,15 @@ namespace App\Livewire;
 
 use App\Models\Vacante;
 use Livewire\Component;
+use Livewire\Attributes\On;
 
 class MostrarVacantes extends Component
 {
-    protected $listeners = [
-        'eliminarVacante'
-    ];
-
-    public function eliminarVacante(Vacante $vacante)
+    #[On('eliminarVacante')]
+    public function eliminarVacante($vacanteId)
     {
-        $vacante->delete();
+        Vacante::findOrFail($vacanteId)->delete();
+        session()->flash('message', 'Vacante eliminada exitosamente.');
     }
 
     public function render()
