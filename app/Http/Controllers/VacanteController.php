@@ -9,11 +9,17 @@ class VacanteController extends Controller
 {
     public function index()
     {
+        if (!auth()->user()->can('viewAny', Vacante::class)) {
+            abort(403);
+        }
         return view('vacantes.index');
     }
 
     public function create()
     {
+        if (!auth()->user()->can('create', Vacante::class)) {
+            abort(403);
+        }
         return view('vacantes.create');
     }
 

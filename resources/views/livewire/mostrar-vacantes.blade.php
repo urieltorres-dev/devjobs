@@ -8,8 +8,7 @@
                 @foreach ($vacantes as $vacante)
                     <div class="space-y-2 p-5 border border-gray-200 md:flex md:justify-between">
                         <div>
-                            <a class="font-semibold"
-                                href="{{ route('vacantes.show', $vacante->id) }}">{{ $vacante->titulo }}</a>
+                            <a class="font-semibold" href="{{ route('vacantes.show', $vacante->id) }}">{{ $vacante->titulo }}</a>
                             <p class="text-sm text-gray-600">{{ $vacante->empresa }}</p>
                             <p class="text-sm text-gray-500">Último dia: {{ $vacante->ultimo_dia->format('d/m/Y') }}</p>
                         </div>
