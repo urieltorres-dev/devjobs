@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\VacanteController;
 use App\Http\Controllers\CandidatoController;
+use App\Http\Controllers\NotificacionController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -15,6 +16,8 @@ Route::get('/vacantes/{vacante}/edit', [VacanteController::class, 'edit'])->midd
 Route::get('/vacantes/{vacante}', [VacanteController::class, 'show'])->name('vacantes.show');
 
 Route::get('candidatos/{vacante}', [CandidatoController::class, 'index'])->name('candidatos.index');
+
+Route::get('/notificaciones', NotificacionController::class)->name('notificaciones');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
