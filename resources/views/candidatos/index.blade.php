@@ -34,7 +34,7 @@
                                     </div>
                                 </li>
                             @empty
-                                <p class="p-3 text-center text-sm text-gray-600">No hay candidatos aun</p>
+                                <p class="p-3 text-center text-sm text-gray-600">Aún no hay candidatos</p>
                             @endforelse
                         </ul>
                     </div>
