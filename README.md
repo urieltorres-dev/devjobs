@@ -74,8 +74,6 @@ npm run dev
 
 A continuación se muestran algunas capturas de pantalla de la aplicación:
 
-## Capturas de pantalla
-
 <table>
   <tr>
     <td align="center">
@@ -128,7 +126,6 @@ A continuación se muestran algunas capturas de pantalla de la aplicación:
     </td>
   </tr>
 </table>
-
 
 ## Demo
 
