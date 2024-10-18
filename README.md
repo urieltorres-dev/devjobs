@@ -1,66 +1,109 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# DevJobs
+
+DevJobs es una plataforma para la búsqueda y publicación de ofertas de empleo, dirigida tanto a desarrolladores como a reclutadores. Los reclutadores pueden publicar vacantes, y los desarrolladores pueden postularse a esas vacantes enviando su currículum vitae.
+
+## Descripción del proyecto
+
+DevJobs está diseñado para facilitar el proceso de reclutamiento en el sector tecnológico. La plataforma permite a los reclutadores gestionar las vacantes de empleo y recibir aplicaciones de candidatos, mientras que los desarrolladores pueden explorar oportunidades laborales en función de sus intereses y habilidades.
+
+## Características
+
+- Registro y autenticación de usuarios.
+- Publicación de vacantes.
+- Gestión de candidatos.
+- Postulación a vacantes.
+- Panel de administración.
+- Interfaz amigable y responsive.
+
+## Tecnologías utilizadas
+
++ **Lenguajes:** PHP, HTML, CSS y JavaScript
++ **Base de datos:** MySQL
++ **Frameworks:** Laravel, Tailwind CSS y Livewire.
++ **Autenticación:** Laravel Breeze
++ **Herramientas de desarrollo:** Docker, Visual Studio Code
+
+## Instalación y configuración
+
+Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
+
+1. Clona el repositorio:
+```bash
+git clone https://github.com/urieltorres-dev/devjobs.git
+```
+
+2. Instala las dependencias de Composer:
+```bash
+composer install
+```
+
+3. Instala las dependencias de Node.js:
+```bash
+npm install
+```
+
+4. Configura el archivo `.env` y genera la clave de la aplicación:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+5. Ejecuta las migraciones y seeders:
+```bash
+php artisan migrate --seed
+```
+
+6. Inicia el servidor de desarrollo:
+```bash
+php artisan serve
+```
+
+7. Ejecuta los assets de frontend:
+```bash
+npm run dev
+```
+
+8. Accede a la aplicación a través de tu navegador en `http://localhost:8000`.
+
+## Roles de Usuario
+
++ **Desarrollador:** Puede buscar vacantes, postularse y subir su CV.
++ **Reclutador:** Puede crear, editar y eliminar vacantes, así como gestionar los candidatos que aplican.
+
+## Capturas de pantalla
+
+A continuación se muestran algunas capturas de pantalla de la aplicación:
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/img/ss1.png" width="400" alt="Página principal 1">
+  <img src="public/img/ss2.png" width="400" alt="Página principal 2">
+</p>
+<p align="center">
+  <img src="public/img/ss3.png" width="400" alt="Login">
+  <img src="public/img/ss4.png" width="400" alt="Register">
+</p>
+<p align="center">
+  <img src="public/img/ss5.png" width="400" alt="Vacante">
+  <img src="public/img/ss6.png" width="400" alt="Correo electrónico de notificación">
+</p>
+<p align="center">
+  <img src="public/img/ss7.png" width="400" alt="Dashboard">
+  <img src="public/img/ss8.png" width="400" alt="Notificaciones">
+</p>
+<p align="center">
+  <img src="public/img/ss9.png" width="400" alt="Candidatos">
+  <img src="public/img/ss10.png" width="400" alt="Formulario para crear vacantes">
 </p>
 
-## About Laravel
+## Demo
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Por el momento la demo no está  disponible.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Licencia
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](https://choosealicense.com/licenses/mit/) para más detalles.
 
-## Learning Laravel
+## Contacto
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Para más información o consultas, puedes contactarme a través de [urieltorres.dev@gmail.com](mailto:urieltorres.dev@gmail.com) o en [github.com/urieltorres-dev](https://github.com/urieltorres-dev).
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
