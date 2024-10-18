@@ -74,26 +74,61 @@ npm run dev
 
 A continuación se muestran algunas capturas de pantalla de la aplicación:
 
-<p align="center">
-  <img src="public/img/ss1.png" width="400" alt="Página principal 1">
-  <img src="public/img/ss2.png" width="400" alt="Página principal 2">
-</p>
-<p align="center">
-  <img src="public/img/ss3.png" width="400" alt="Login">
-  <img src="public/img/ss4.png" width="400" alt="Register">
-</p>
-<p align="center">
-  <img src="public/img/ss5.png" width="400" alt="Vacante">
-  <img src="public/img/ss6.png" width="400" alt="Correo electrónico de notificación">
-</p>
-<p align="center">
-  <img src="public/img/ss7.png" width="400" alt="Dashboard">
-  <img src="public/img/ss8.png" width="400" alt="Notificaciones">
-</p>
-<p align="center">
-  <img src="public/img/ss9.png" width="400" alt="Candidatos">
-  <img src="public/img/ss10.png" width="400" alt="Formulario para crear vacantes">
-</p>
+## Capturas de pantalla
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="public/img/ss1.png" width="400" alt="Página principal 1">
+      <br><b>Página principal 1</b>
+    </td>
+    <td align="center">
+      <img src="public/img/ss2.png" width="400" alt="Página principal 2">
+      <br><b>Página principal 2</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="public/img/ss3.png" width="400" alt="Login">
+      <br><b>Login</b>
+    </td>
+    <td align="center">
+      <img src="public/img/ss4.png" width="400" alt="Register">
+      <br><b>Register</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="public/img/ss5.png" width="400" alt="Vacante">
+      <br><b>Vacante</b>
+    </td>
+    <td align="center">
+      <img src="public/img/ss6.png" width="400" alt="Correo electrónico de notificación">
+      <br><b>Correo electrónico de notificación</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="public/img/ss7.png" width="400" alt="Dashboard">
+      <br><b>Dashboard</b>
+    </td>
+    <td align="center">
+      <img src="public/img/ss8.png" width="400" alt="Notificaciones">
+      <br><b>Notificaciones</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="public/img/ss9.png" width="400" alt="Candidatos">
+      <br><b>Candidatos</b>
+    </td>
+    <td align="center">
+      <img src="public/img/ss10.png" width="400" alt="Formulario para crear vacantes">
+      <br><b>Formulario para crear vacantes</b>
+    </td>
+  </tr>
+</table>
+
 
 ## Demo
 
